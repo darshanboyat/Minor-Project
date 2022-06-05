@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Allison&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.head {
+  text-align: center;
+  font-family: cursive;
+  font-weight: bolder;
+}
+.message {
+  justify-content: center;
+  text-align: center;
+  color: rgb(136, 135, 135);
+}
+p {
+  font-weight: bolder;
+}
+.size {
+  color: gray;
+}
+.h5 {
+  font-weight: bolder;
+}
+.total {
+  text-align: right;
+  padding-right: 130px;
+}
+.btn-primary {
+  margin-left: 40%;
+  background-color: tomato;
+  border-radius: 4rem;
+}
+.img {
+  margin-left: 40%;
+  max-width: 50%;
+}
+.img-fluid{
+    max-width: 20%;
+}
+.main{
+    display: flex;
+}
+.thumbnail{
+  margin:  50px 0px 0px 0px;
+}
+.detail{
+  display: flex;
+  margin:  0px 0px 40px 40px;
+}
+.qnt, .prc{
+  margin:  50px 0px 80px 80px;
+}
+@media screen and (min-width: 300px) {
+  .h5 {
+    display: grid;
+    text-align: center;
+  }
+  .card {
+    margin-left: -18%;
+    width: 150%;
+  }
+  .img {
+    margin-left: 10%;
+    max-width: 70%;
+  }
+  .img-fluid{
+    max-width: 70%;
+  }
+  .place {
+    display: grid;
+    margin-left: -20%;
+    width: 130%;
+    background-color: tomato;
+    border-radius: 4rem;
+  }
+  .thumbnail{
+    margin:  0px 0px 0px 0px;
+  }
+  .detail{
+    display: flex;
+    margin:  30px 0px 0px 0px;
+  }
+  .qnt, .prc{
+    margin:  0px 10px 0px 0px;
+  }
+  .total {
+    text-align: right;
+    padding-right: 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .img {
+    margin-left: 40%;
+    max-width: 50%;
+  }
+  .img-fluid{
+    max-width: 20%;
+  }
+  .thumbnail{
+    margin:  50px 0px 0px 0px;
+  }
+  .detail{
+    margin:  0px 0px 40px 40px;
+  }
+  .qnt, .prc{
+    margin:  50px 0px 80px 80px;
+  }
+  .total {
+    text-align: right;
+    padding-right: 130px;
+  }
+}

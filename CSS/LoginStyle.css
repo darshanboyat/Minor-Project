@@ -1,0 +1,118 @@
+*{
+    margin: 0rem;
+    padding: 0rem;
+    top: 0rem;
+    bottom: 0rem;
+    left: 0rem;
+    right: 0rem;
+}
+body{
+    background-image: url("/Menu/BackgroundLogin.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+h1{
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 4rem;
+    color: white;
+    font-weight:900;
+    padding-top: 3rem;
+    margin-bottom: -2rem;
+}
+.login{
+    position: relative;
+    float: left;
+    color: black;
+    font-size: 3rem;
+    left: 10rem;
+    top: 15rem;
+    border-bottom: 5px solid gold;
+}
+.form
+{
+    /* display: flex;
+    flex-direction: column; */
+    /* position: relative; */
+    width: 80rem;
+    top: 50rem;
+    left: 5rem;
+}
+#username, #password input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px gold solid;
+}
+#password, #username input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px gold solid;
+}
+#username{
+    font-size: 1.3rem;
+    border-radius: 2rem;
+    font-family: 'Lobster', cursive;
+    left: 100rem;
+    margin: 0px;
+    margin-top: 20rem;
+    margin-left: 5.5rem;
+    outline: none;
+} 
+#password{
+    font-size: 1.3rem;
+    border-radius: 2rem;
+    font-family: 'Lobster', cursive;
+    left: 100rem;
+    margin: 0px;
+    margin-top: 5rem;
+    margin-left: 13rem;
+    outline: none;
+}
+form #username{
+    right: 20rem;
+}
+form #password{
+    right: 50rem;
+}
+#btn{
+    font-size: 1.8rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 2px solid whitesmoke;
+    background-color: teal;
+    color: white;
+    border-radius: 2rem;
+    cursor: pointer;
+    position: relative;
+    top: 6rem;
+    bottom: 400px;
+    left: 250px;
+}
+.Loginbtn{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.Signupbtn{
+    margin-left: 3rem;
+}
+#btn:hover{
+    color:black;
+    background-color: gold;
+    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+    box-shadow: 0px 7px 5px rgba(0, 0, 1, 1);
+    transition: 0.8s;
+}
+.forgetPassword{
+    position: relative;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    color: black;
+    top: 7rem;
+    left: 20.5rem;
+    text-decoration: none;
+}
+.forgetPassword:hover{
+    text-decoration: underline;
+    transition: 0.8s;
+}

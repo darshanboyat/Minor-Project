@@ -1,0 +1,411 @@
+body{
+    background-color: rgb(255, 255, 255);
+    bottom: 0px;
+}
+
+
+/* Navigation bar  */
+#navbar{
+    display: flex;
+    align-items: center;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar{
+    position: absolute;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 20px;
+    padding-left: 1rem;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white; 
+    cursor: pointer;
+}
+#navbar ul #menu{
+    position: absolute;
+    width: 50px;
+    left: 88rem;
+}
+#navbar #ToggleMenu{
+    display: none;
+    position: relative;
+    margin-top: 40px;
+    margin-left: 36.2rem;
+    font-size: 5rem;
+    padding-right: 3.5rem;
+    padding-left: none;
+}
+#navbar fieldset{
+    background-color: teal;
+    position: absolute;
+    border-radius: 2rem;
+    width: 15rem;
+    z-index: 3;
+}
+#ToggleMenu img{
+    width: 15%;
+}
+#ToggleMenu img, .InsideToggle{
+   display: flex;
+   flex-direction: row;
+}
+
+.InsideToggle{
+    color: white;
+    font-size: 7rem;
+    text-align: right;
+    font-family: 'Lobster', cursive;
+    text-align: left;
+    font-weight: bolder;
+    text-decoration: none;
+    margin-bottom: 3rem;
+    margin-left: 1.8rem;
+}
+#ToggleMenu .InsideToggle:hover{
+    color: black;
+    border-radius: 2rem;
+    width: 13rem;
+    background-color: white; 
+    cursor: pointer;
+    transition: 0.8s;
+}
+.ToggleItems{
+    display: none;
+    z-index: 0;
+}
+/* Home Cover  */
+.cover #HomeCover
+{
+    width: 100%;
+    height: 600px;
+}
+
+/* Home Section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 500px;
+    height:0px;
+    top: 0px;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    left: -33px;
+    height: 60%;
+    width: 110%;
+    z-index: -1;
+    opacity: 0.86;
+}
+#home h2{
+    color: rgb(253, 251, 255);
+    text-align: center;
+    font-size: 2.8rem;
+}
+#home p{
+    color: wheat;
+    font-size: 1.5rem;
+    top: 403px;
+    right: -199px;
+    text-align: center;
+    font-family: 'Baloo Bhai 2', cursive;
+    padding: 12px;
+    position: absolute;
+}
+.h-primary{
+    font-size: 3.8rem;
+    color: white;
+    top: 302px;
+    right: -70px;
+    text-align: center;
+    padding: 12px;
+    position: absolute;
+}
+.h-primary1{
+    font-size: 2.8rem;
+    color: rgb(74 10 10);
+    top: 619px;
+    left:620px;
+    padding: 12px;
+    position: absolute;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid whitesmoke;
+    background-color: brown;
+    color: white;
+    margin : 17px;
+    font-size: 0.85rem;
+    border-radius: 0.86rem;
+    cursor: pointer;
+    position: absolute;
+    top: 540px;
+    left: 677px;
+}
+.btn:hover{
+    background-color: aqua;
+    color:black;
+    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+    transition: 0.5s;
+}
+.service-container{
+    margin: 45px;
+    display: -moz-inline-grid;
+}
+.service-container img{
+    display: flex;
+}
+.service-container #box{
+    display: flex inline;
+    margin: 108px;
+    border: 2px solid brown;
+    border-radius: 15px;
+    position: inline;
+}
+.service-container #box h1{
+    justify-content: center;
+    position: relative;
+    left: 701px;
+    bottom: 355px;
+    font-size: 3rem;
+    color: burlywood;
+}
+.service-container #box .btn2{
+    padding: 6px 20px;
+    border: 2px solid whitesmoke;
+    background-color: brown;
+    color: white;
+    margin : 17px;
+    border-radius: 0.86rem;
+    cursor: pointer;
+    position: relative;
+    bottom: 336px;
+    left: 725px;
+    font-size: 1.5rem;
+}
+.service-container #box .btn2:hover{
+    background-color: aqua;
+    color:black;
+    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+    transition: 0.5s;
+}
+.service-container #box .btnCart{
+    padding: 6px 20px;
+    border: 2px solid whitesmoke;
+    background-color: chartreuse;
+    color: white;
+    margin : 17px;
+    border-radius: 0.86rem;
+    cursor: pointer;
+    position: relative;
+    bottom: 336px;
+    left: 725px;
+    font-size: 1.5rem;
+}
+.service-container #box .btnCart:hover{
+    background-color: green;
+    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+    transition: 0.5s;
+}
+.Data{
+    padding-left: 60px;
+    position: relative;
+    margin: 1rem;
+    font-weight: bolder;
+    justify-content: center;
+    text-align: center;
+}
+.Data h2
+{
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+    color: gold;
+    font-weight:900;
+}
+.Data b{
+    font-size: 1.5rem;
+    text-align: center;
+    
+}
+.Data p{
+    font-size: 1.5rem;
+    text-align: center;
+    
+}
+.Data .DataButton{
+    padding: 6px 20px;
+    justify-content: center;
+    border: 2px solid whitesmoke;
+    background-color: brown;
+    color: white;
+    margin : 17px;
+    font-size: 1.35rem;
+    border-radius: 0.86rem;
+    cursor: pointer;
+    position: relative;
+    
+}
+.DataButton:hover{
+    background-color: aqua;
+    color:black;
+    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+    transition: 0.5s;
+}
+.Data .FirstName::placeholder{
+    font-size: 3.5rem;
+    align-items: center;   
+}
+.covid p{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: rgb(163, 23, 23);
+    bottom: 0px;
+    text-align: center;
+    position: relative;
+}
+.covid .btn3{
+    padding: 6px 20px;
+    justify-content: center;
+    border: 2px solid whitesmoke;
+    background-color: brown;
+    color: white;
+    margin : 17px;
+    font-size: 1.35rem;
+    border-radius: 0.86rem;
+    cursor: pointer;
+    left:43.5rem;
+    position: relative;
+}
+.covid .btn3:hover{
+    background-color: aqua;
+    color:black;
+    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+    transition: 0.5s;
+}
+.cart{
+    position: absolute;
+    top: 605%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin: 0 10px;
+    color: #000000;
+    font-size: 25px;
+    line-height: 50px;
+    transition: .5s;
+    float: right;
+}
+.cart :hover {
+    color: #626adf;
+}
+.cart a {
+    position: relative;
+    display: block;
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    background-color: rgb(114, 142, 235);
+    text-align: center;
+    transition: 0.5s;
+    transform: translate(0,0px);
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+    left:997px;
+    top: 722%;
+}
+.cart a img{
+    width: 70%;
+}
+.cart a:hover {
+    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+}
+.cart a:hover {
+    background-color: #7bf707;
+}
+.social-media{
+    position: absolute;
+    top: 619%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    margin: 200px;
+    display: flex;
+    margin: 0 10px;
+    color: #000000;
+    font-size: 25px;
+    line-height: 50px;
+    transition: .5s;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.social-media a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    transition: 0.5s;
+    transform: translate(0,0px);
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+    bottom: 6rem;
+    left:36px;
+}
+.social-media a:hover{
+    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+}
+.social-media #facebook{
+    width: 60%;
+    height: 70%;
+    padding: auto;
+}
+.social-media #instagram{
+    width: 60%;
+    height: 70%;
+    padding: auto;
+}
+.social-media #twitter{
+    width: 70%;
+    height: 70%;
+    padding: auto;
+}
+.social-media a:hover{
+    background-color: #cf77f1;
+}
+
+/* Copyright */
+.center{
+    text-align: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 15px;
+    position: absolute;
+    left: 660px;
+    top: 301.1rem;
+}

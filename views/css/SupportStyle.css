@@ -1,0 +1,20 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.container{
+    margin-top: 2%;
+}
+.description{
+    align-items: center;
+}
+.submit{
+    border-radius: 2rem;
+    background-color: tomato;
+}
+@media screen and (min-width: 300px){
+    .query{
+        display: list-item;
+        font-size: 80%;
+    }
+}

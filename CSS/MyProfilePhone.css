@@ -1,0 +1,104 @@
+body{
+    background-image: url("/Menu/Phone MyProfile Background.jpg");
+    background-repeat: no-repeat;
+    background-size: 1460px 1600px;
+    background-color: white;
+}
+.navbar{
+    display: none;
+}
+.Menu{
+    display: block;
+    position: absolute;
+    width: 15%;
+    top: 2rem;
+    left: 2rem;
+}
+#ToggleMenu{
+    display: none;
+    position: relative;
+    border: 4px black solid;
+    border-radius: 2rem;
+    background-color: teal;
+    top: 5rem;
+    left: -0.5rem;
+    width: 15rem;
+    height: 30rem;
+    z-index: 3;
+}
+#ToggleMenu li{
+    list-style: none;
+}
+#ToggleMenu li a{
+    display: flex;
+    text-decoration: none;
+    padding-top: 0rem;
+    padding-bottom: 5rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: black;
+}
+#ToggleMenu li a:hover{
+    background-color: white;
+    border-radius: 0.8rem;
+}
+.Menu img:active{
+    transition: 0.8s;
+}
+.profileIcon{
+    position: absolute;
+    background-color: white;
+    border-radius: 5rem;
+    width: 10rem;
+    height: 10rem;
+    text-align: center;
+    left: 7.1rem;
+    top: 10rem;
+    margin: 0rem;
+    margin-right: -5rem;
+}
+#text{
+    padding-top: 2.5rem;
+}
+#user{
+    display: flex;
+    position: absolute;
+    top: 20rem;
+    left: 4.5rem;
+    width: 20rem;
+    color: white;
+    letter-spacing: 0.5rem;
+}
+.container{
+    position: absolute;
+    top: 25rem;
+    left: 0.3rem;
+    border: 2px white solid;
+    border-width: 10%;
+    color: black;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    border-radius: 1.5rem;
+    padding-right: 2rem;
+}
+.detail{
+    display: flex;
+    width: 19.9rem;
+    margin-left: -0.5rem;
+}
+.container a{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    padding-right: 0rem;
+    text-decoration: none;
+    color: black;
+    left: 5rem;
+    margin-top: -1rem;
+}
+.Logout{
+    position: relative;
+    top: -3rem;
+    left: -9rem;
+}

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./partials/head.ejs'); %>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Pizza Time | Home</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">Pizza Time</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/login">Account</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/support">Support</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">More</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="/contact">Contact us</a></li>
+                <li><a class="dropdown-item" href="/about">About us</a></li>
+                <li><a class="dropdown-item" href="/follow">Follow us</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    ​<picture>
+      <img src="Menu/Home Cover.jpg" class="img-fluid" alt="..." style.height="2px"/>
+    </picture>
+    <h1 class="h-primary">Welcome To Pizza Time</h1>
+    <p class="quotes">
+      <b>Dear diet, things just aren’t looking good for the both of us.
+      <br/>It’s not me, it’s you. You’re too much work. You’re boring and I can’t stop cheating on you.</b>
+    </p>
+    <div class="card-group">
+        <div class="card">
+          <img src="Menu/<%= data[0].image%>" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title"><%= data[0].name %> | &#8377; <%= data[0].price%></h5>
+            <p class="card-text">
+              <%= data[0].discription%>
+            </p>
+            <p class="card-text">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="Menu/<%= data[1].image%>" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title"><%= data[1].name %> | &#8377; <%= data[1].price%></h5>
+            <p class="card-text">
+              <%= data[1].discription%>
+            </p>
+            <p class="card-text">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="Menu/<%= data[2].image%>" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title"><%= data[2].name %> | &#8377; <%= data[2].price%></h5>
+            <p class="card-text">
+              <%= data[2].discription%>
+            </p>
+            <p class="card-text">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+    </div>
+    <div class="card-group">
+      <div class="card">
+        <img src="Menu/<%= data[3].image%>" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title"><%= data[3].name %> | &#8377; <%= data[3].price%></h5>
+          <p class="card-text">
+            <%= data[3].discription%>
+          </p>
+          <p class="card-text">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="Menu/<%= data[4].image%>" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title"><%= data[4].name %> | &#8377; <%= data[4].price%></h5>
+          <p class="card-text">
+            <%= data[4].discription%>
+          </p>
+          <p class="card-text">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="Menu/<%= data[5].image%>" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title"><%= data[5].name %> | &#8377; <%= data[5].price%></h5>
+          <p class="card-text">
+            <%= data[5].discription%>
+          </p>
+          <p class="card-text">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-group">
+
+      <div class="card">
+        <img src="Menu/<%= data[6].image%>" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title"><%= data[6].name %> | &#8377; <%= data[6].price%></h5>
+          <p class="card-text">
+            <%= data[6].discription%>
+          </p>
+          <p class="card-text">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="Menu/<%= data[7].image%>" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title"><%= data[7].name %> | &#8377; <%= data[7].price%></h5>
+          <p class="card-text">
+            <%= data[7].discription%>
+          </p>
+          <p class="card-text">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </p>
+        </div>
+      </div>
+  </div>
+    <!-- <div class="card-group">
+      <div class="card">
+        <img src="Menu/Paneer cheese.jpg" class="card-img-top paneer-cheese" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Paneer cheese | &#8377; 125</h5>
+          <p class="card-text">
+            This is a widely lovable pizza around the every corner of the world. It uses 
+            three types of cheese which will make it mouth watering delicious, And it stuffed with the 
+            pizza sauce and Veggies and baked in the hot heaven of taste right after garnish with oregano and herbs.
+          </p>
+          <p class="card-text">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Menu/Paneer tikka.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Paneer tikka | &#8377; 140</h5>
+          <p class="card-text">
+            This is a widely lovable pizza around the every corner of the world. It uses 
+            three types of cheese which will make it mouth watering delicious, And it stuffed with the 
+            pizza sauce and Veggies and baked in the hot heaven of taste right after garnish with oregano and herbs..
+          </p>
+          <p class="card-text">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Menu/Extra cheese.png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Extra Cheese | &#8377; 120</h5>
+          <p class="card-text">
+            This variety of Pizza is fully loaded with cheese. It has the extra layar of cheese which will make it mouth watering delicious, And it stuffed with the 
+            pizza sauce and fresh Veggies and baked in the hot heaven of taste right after garnish with oregano, herbs and chilly flakes.
+          </p>
+          <p class="card-text">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="card-group">
+      <div class="card">
+        <img src="Menu/Cheese burst.png" class="card-img-top" id="CheeseBusrt" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Cheese Burst | &#8377; 160</h5>
+          <p class="card-text">
+            This is a widely lovable pizza around the every corner of the world. It uses 
+            three types of cheese which will make it mouth watering delicious, And it stuffed with the 
+            pizza sauce and Veggies and baked in the hot heaven of taste right after garnish with oregano and herbs. 
+          </p>
+          <p class="card-text">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="Menu/Paneer cheese.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Maggie Pizza | &#8377; 110</h5>
+          <p class="card-text">
+            This is a wider card with supporting text below as a natural lead-in
+            to additional content. This card has even longer content than the
+            first to show that equal height action.
+          </p>
+          <p class="card-text">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </p>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="covid">
+      <p>*We take the health and safety of our team members and customers very seriously. As we
+        continue to monitor the situation with Coronavirus (COVID-19), we are taking steps to help
+        protect the health and well-being of our team and customers.*</p>
+        <a href="https://covid19.who.int/" target="_blank"><div class="d-grid gap-2">
+          <button class="btn btn-primary" type="button">Learn More</button>
+        </div></a>
+      </div>
+
+    <div class="line"></div>
+    <div class="d-flex">
+      <div class="flex-shrink-0">
+        <img src="../Menu/facebook.png" alt="Facebook" class="facebook">
+      </div>
+      <div class="flex-shrink-0">
+        <img src="../Menu/instagram.png" alt="Instagram" class="instagram">
+      </div>
+      <div class="flex-shrink-0">
+        <img src="../Menu/Twitter.png" alt="Twitter" class="twitter">
+      </div>
+    </div>
+    <div class="justify-content-center">
+      <marquee behavior="" direction="">Copyright &copy; Pizza Time | All rights reserved!</marquee>
+    </div>
+      <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+
+  </body>
+</html>

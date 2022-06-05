@@ -1,0 +1,129 @@
+body{
+    background-image: url("/Menu/MyProfileBackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: white;
+}
+.ToggleMenu{
+    display: flex;
+    flex-direction: row; 
+    position: absolute;
+    margin-top: 1.5rem;
+    list-style: none;
+    height: 5rem;
+}
+ul{
+    display: flex;
+    padding-right: -5%;
+}
+li{
+    list-style: none;
+}
+li a{
+    display: flex;
+    text-align: unset;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+.navbar::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+li a:hover{
+    background-color: white;
+    border-radius: 1rem;
+    height: 2rem;
+    width: 7rem;
+    color: black;
+}
+.Menu{
+    display: none;
+}
+.ToggleMenu{
+    display: none;
+}
+.items{
+    font-size: 1.5rem;
+    color: tomato;
+    margin-left: 1rem;
+    margin-right: 3rem;
+}
+#ToggleMenu{
+    display: none;
+}
+.Logout{
+    position: absolute;
+    border-color: black;
+    border-radius: 2rem;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    width: 6rem;
+    height: 3rem;
+    margin-top: -4%;
+    margin-left: 85rem;
+}
+.Logout:hover{
+    background-color: rgb(104, 104, 238);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 5px 3px black;
+
+    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+    transition: 0.8s;
+}
+
+
+
+.profileIcon{
+    position: absolute;
+    background-color: white;
+    border-radius: 5rem;
+    width: 10rem;
+    height: 10rem;
+    text-align: center;
+    left: 40rem;
+    top: 8rem;
+    margin: 0rem;
+    margin-right: -5rem;
+}
+#text{
+    padding-top: 2.8rem;
+}
+#user{
+    position: absolute;
+    top: 18rem;
+    left: 36.8rem;
+    color: white;
+    letter-spacing: 0.5rem;
+}
+.container{
+    position: absolute;
+    top: 25rem;
+    left: 22rem;
+    border: 4px white solid;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.4rem;
+    border-radius: 1.5rem;
+    margin-left: 0rem;
+    padding-left: 3rem;
+    padding-right: 35rem;
+}
+
+.container a{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    padding-right: 0rem;
+    text-decoration: none;
+    color:#ffff;
+    left: 15rem;
+}
+.container a:hover{
+    color: gold;
+}

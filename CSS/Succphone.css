@@ -1,0 +1,381 @@
+body{
+    background-color: white;
+    background-size: 1000px;
+}
+
+/* Navigation bar  */
+ #navbar{
+    position: absolute;
+}
+#navbar::before{
+    content: "";
+    background: rgb(221, 82, 82);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul li a
+{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 0px;
+}
+
+/* Home section  */
+.cover #HomeCover
+{
+    width: 270%;
+    height: 583px;
+}
+.h-primary
+{
+    font-size: 3.8rem;
+    color: white;
+    top: 285px;
+    right: 261px;
+    left: 9rem;
+    text-align: center;
+    padding: 12px;
+    position: absolute;
+}
+.h-primary1{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    color: rgb(74 10 10);
+    top: -1.5rem;
+    left: 280px;
+    width: 20rem;
+}
+#home p{
+    color: wheat;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+    top: 387px;
+    right: 65px;
+    text-align: center;
+    font-family: 'Baloo Bhai 2', cursive;
+    padding: 12px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid whitesmoke;
+    background-color: brown;
+    color: white;
+    margin : 17px;
+    font-size: 0.85rem;
+    border-radius: 0.86rem;
+    cursor: pointer;
+    position: absolute;
+    top: 521px;
+    left: 390px;
+}
+.btn:hover{
+    background-color: aqua;
+    color:black;
+}
+.service-container{
+    margin: 45px;
+    display: -moz-inline-grid;
+}
+.service-container img{
+    display: flex;
+    justify-content: left;
+    width: 30.0rem;
+    padding-left: 4rem;
+}
+.service-container #box{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    margin-bottom: 8rem;
+    padding: 5rem;
+    height: 50rem;
+    width: 40rem;
+    border: 2px solid brown;
+    border-radius: 15px;
+    position: relative;
+}
+.service-container #box h1{
+    justify-content: center;
+    position: relative;
+    left: 90px;
+    top: 13px;
+    font-size: 3rem;
+    color: burlywood;
+}
+.service-container #box .btn2{
+    padding: 6px 20px;
+    border: 2px solid whitesmoke;
+    background-color: brown;
+    color: white;
+    margin : 8px;
+    border-radius: 0.86rem;
+    cursor: pointer;
+    position: relative;
+    top: 1rem;
+    left: -0.5rem;
+    font-size: 2.5rem;
+}
+.service-container #box .btn2:hover{
+    background-color: aqua;
+    color:black;
+}
+.service-container #box .btnCart{
+    padding: 6px 20px;
+    border: 2px solid whitesmoke;
+    background-color: chartreuse;
+    color: white;
+    margin : 9px;
+    border-radius: 0.86rem;
+    cursor: pointer;
+    position: relative;
+    top: 2rem;
+    left: -0.5rem;
+    font-size: 2.6rem;
+}
+.service-container #box .btnCart:hover{
+    background-color: green;
+}
+.Data{
+    display: flex;
+    flex-direction: column;
+    width: 50rem;    
+    left: 0.8rem;
+}
+.Data a{
+    color: black;
+    text-underline-offset: false;
+}
+.Data b{
+    font-size: 1.5rem;
+    text-align: center;
+    
+}
+.Data p{
+    font-size: 1.5rem;
+    text-align: center;
+    
+}
+.Data .DataButton{
+    padding: 6px 20px;
+    justify-content: center;
+    border: 2px solid whitesmoke;
+    background-color: brown;
+    color: white;
+    margin : 17px;
+    font-size: 1.35rem;
+    border-radius: 0.86rem;
+    cursor: pointer;
+    position: relative;
+}
+.DataButton:hover{
+    background-color: aqua;
+    color:black;
+}
+.Data .FirstName::placeholder{
+    font-size: 3.5rem;
+    align-items: center;   
+}
+.covid p{
+    display: flex;
+    flex-direction: row;
+    width: 52rem;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: rgb(163, 23, 23);
+    bottom: 0px;
+    text-align: center;
+    position: relative;
+}
+.covid .btn3{
+    padding: 6px 20px;
+    justify-content: center;
+    border: 2px solid whitesmoke;
+    background-color: brown;
+    color: white;
+    margin-top : -5px;
+    margin-bottom: 3rem;
+    font-size: 1.35rem;
+    border-radius: 0.86rem;
+    cursor: pointer;
+    left:22.5rem;
+    position: relative;
+}
+.covid .btn3:hover{
+    background-color: aqua;
+    color:black;
+}
+.line{
+    width: 50rem;
+}
+.cart{
+    position: relative;
+    top: 751%;
+    right: 22%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin: 0 10px;
+    color: #000000;
+    font-size: 25px;
+    transition: .5s;
+}
+.cart :hover {
+    color: #626adf;
+}
+.cart a {
+    position: relative;
+    display: block;
+    width: 110px;
+    height: 110px;
+    border-radius: 60%;
+    background-color: rgb(114, 142, 235);
+    text-align: center;
+    transition: 0.5s;
+    transform: translate(0,0px);
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+    left:772px;
+}
+.cart a img{
+    width: 70%;
+}
+.cart a:hover {
+    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+}
+.cart a:hover {
+    background-color: #7bf707;
+}
+.center
+{
+    display: flex;
+    width: 45rem;
+    margin-left: -38.5rem;
+    justify-content: center;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+    position: absolute;
+    left: 720px;
+    top: 389.1rem;
+}
+.social-media{
+    position: absolute;
+    top: 600%;
+    left: 110%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    margin: 200px;
+    display: flex;
+    margin: 0 10px;
+    color: #000000;
+    font-size: 25px;
+    line-height: 50px;
+    transition: .5s;
+    flex-wrap: nowrap;
+}
+.social-media a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    transition: 0.5s;
+    transform: translate(0,0px);
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+    bottom: -30rem;
+    left:36px;
+}
+.social-media a:hover{
+    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+}
+.social-media #facebook{
+    width: 60%;
+    height: 70%;
+    padding: auto;
+}
+.social-media #instagram{
+    width: 60%;
+    height: 70%;
+    padding: auto;
+}
+.social-media #twitter{
+    width: 70%;
+    height: 70%;
+    padding: auto;
+}
+.social-media a:hover{
+    background-color: #cf77f1;
+}
+@media screen and (min-width: 414px) {
+    .cart{
+        position: absolute;
+        top: 751%;
+        right: 22%;
+        transform: translate(-50%, -50%);
+        padding: 0;
+        margin: 0;
+        display: flex;
+        margin: 0 10px;
+        color: #000000;
+        font-size: 25px;
+        transition: .5s;
+    }
+    .social-media a{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 68px;
+        height: 68px;
+        border-radius: 50%;
+        background-color: white;
+        text-align: center;
+        transition: 0.5s;
+        transform: translate(0,0px);
+        box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+        bottom: -59rem;
+        left:20px;
+    }
+  }
+  @media screen and (min-width: 375px) {
+    .cart{
+        position: absolute;
+        top: 751%;
+        right: 30%;
+        transform: translate(-50%, -50%);
+        padding: 0;
+        margin: 0;
+        display: flex;
+        margin: 0 10px;
+        color: #000000;
+        font-size: 25px;
+        transition: .5s;
+    }
+    .social-media a{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 68px;
+        height: 68px;
+        border-radius: 50%;
+        background-color: white;
+        text-align: center;
+        transition: 0.5s;
+        transform: translate(0,0px);
+        box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+        bottom: -79rem;
+        left: 46px;
+    }
+  }

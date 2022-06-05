@@ -1,0 +1,45 @@
+<%if(session.cart) { %>
+<div class="d-grid gap-2 col-6 mx-auto">
+  <h5 class="h5 text-center">Order summary</h5>
+<% for(let pizza of Object.values(session.cart.items)) { %>
+<div class="card mb-3" >
+  <div class="row g-0">
+    <img src="Menu/<%= pizza.item.image %>" class="img-fluid rounded-start" alt="...">
+    <div class="col-md-8">
+      <div class="card-body main">
+        <span class="thumbnail">
+          <h5 class="card-title"><%= pizza.item.name %> </h5> <!--This generates a null string -->
+          <p class="card-text size"><%= pizza.item.size %></p>
+        </span>
+        <span class="detail">
+          <p class="card-text qnt"><%= pizza.qty %>pcs</p>
+          <p class="card-text prc">&#8377 <%= (pizza.qty * pizza.item.price) %> /-</p>
+      </span> 
+      </div>
+    </div>
+  </div>
+</div>  
+<% } %>
+<div class="row d-flex">
+  <div class="col">
+    <h3 class="h3 total">Total &#8377 <%= session.cart.totalPrice %>/-</h3>
+  </div>
+</div>
+<form id="order" action="/order" method="POST"></form>
+<div class="d-grid gap-2 col-6 mx-auto">
+  <button onclick="document.getElementById('order').submit()" class="btn btn-primary place" type="submit">Place order</button>
+</div>
+<%}else{ %>
+    <!-- Empty Cart page html serve dynamically -->
+    
+        <p class="h4 text-center head">Cart Empty &#128533</p>
+        <p class="text-center message">You probably haven't ordered a pizza yet. <br>To order a pizza go to the main page.</p>
+        <figure class="figure">
+          <img src="Menu/empty_cart_co35.png" class="figure-img img rounded" alt="Empty Cart &#128533">
+        </figure>
+        <div class="d-grid gap-2 col-6 mx-auto">
+          <a href="/"><button class="btn btn-primary" type="button">Go to Home</button></a>
+        </div>
+<% } %>
+
+  

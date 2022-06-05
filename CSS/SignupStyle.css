@@ -1,0 +1,168 @@
+body{
+    background-image: url("/Menu/BackgroundSignup.jpg");
+    background-repeat: no-repeat;
+    background-size: 1580px 1000px;
+    position: relative;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    left: 10rem;
+    font-family: 'Lobster', cursive;
+    font-size: 4rem;
+    color: gold;
+    font-weight:900;
+    margin: 0rem;
+    margin-bottom: -10rem;
+}
+
+/* Name */
+.name{
+    display: flex;
+    color: wheat;
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-family: 'Lobster', cursive;
+    margin: 0px;
+    margin-top: 15rem;
+    margin-right: -10px;
+    justify-content: center;
+    margin-left: 0rem;
+}
+.name input
+{
+    width: 20rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    border-radius: 10rem;
+    margin-right: 3rem;
+}
+input::-webkit-input-placeholder:hover{
+    color: black !important;
+}
+
+/* Address */
+.detail{
+    display: flex;
+    color: wheat;
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-family: 'Lobster', cursive;
+    margin: 0px;
+    margin-top: 2.5rem;
+    margin-right: -30px;
+    justify-content: center;
+    margin-left: -17rem;
+}
+.detail input
+{
+    width: 50rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    border-radius: 10rem;
+}
+input::-webkit-input-placeholder:hover{
+    color: black !important;
+}
+
+/* Gender */
+.gender{
+    display: flex;
+    color: wheat;
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-family: 'Lobster', cursive;
+    margin: 0px;
+    margin-top: 2.5rem;
+    margin-left: 4.5rem;
+    margin-right: 23rem;
+}
+.gender b{
+    margin-right: 10rem;
+}
+.gender #Female{
+    margin-left: 18rem;
+}
+
+
+.contact{
+    display: flex;
+    color: wheat;
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-family: 'Lobster', cursive;
+    margin: 0px;
+    margin-top: 2rem;
+    justify-content: center;
+    margin-left: 0rem;
+}
+.contact input
+{
+    width: 20rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    border-radius: 10rem;
+    margin-right: 3rem;
+}
+
+input::-webkit-input-placeholder:hover{
+    color: black !important;
+}
+
+
+
+/* Password */
+.password{
+    display: flex;
+    color:wheat;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-family: 'Lobster', cursive;
+    margin: 0px;
+    margin-top: 2rem;
+    margin-right: -30px;
+    justify-content: center;
+    margin-left: 4.5rem;
+}
+.password input
+{
+    width: 40rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    border-radius: 10rem;
+    margin-right: 3rem;
+}
+input::-webkit-input-placeholder:hover{
+    color: black !important;
+}
+
+/* Button */
+.login{
+    display: flex;
+    color: wheat;
+    margin-left: 38.45rem;
+    margin-top: 5rem;
+}
+.Signupbtn{
+    border-radius: 0.3rem;
+    font-size: 2rem;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 2px solid whitesmoke;
+    background-color: teal;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    top: 50px;
+    left: 625px;
+    font-size: 1.5rem;
+}
+.Signupbtn:hover{
+    color:black;
+    background-color: gold;
+    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+    box-shadow: 0px 7px 5px rgba(0, 0, 1, 1);
+    transition: 0.8s;
+}

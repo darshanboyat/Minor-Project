@@ -1,0 +1,264 @@
+*{
+    margin: 0%;
+    padding: 0%;
+  }
+  .container-md{
+    width: 40rem;
+    height: 40rem;
+    margin-top: 2.5rem;
+    box-shadow: 0px 7px 30px black;
+  }
+  h1{
+    position: relative;
+    left: 15.5rem;
+    font-family: 'Baloo Bhai 2', cursive;
+  }
+  h2{
+    margin: 0rem;
+    font-size: 0.8rem;
+  }
+  #name, #user, #address, #postalCode, #passcode, #Conf-passcode{
+      position: relative;
+      text-align: center;
+      width: 20rem;
+      border: none;
+      border-bottom: 3px gold solid;
+      left: 5rem;
+      top: 0rem;
+      margin-top: 5%;
+  }
+  input:hover{
+    border-bottom: blue;
+  }
+  #name{
+      left: 7rem;
+  }
+  #user{
+      left: 5.5rem;
+  }
+  #address{
+    text-align: center;
+    left: 8.45rem;
+  }
+  #postalCode{
+      left: 10rem;
+  }
+  #passcode{
+    margin-top: 2.5rem;
+    left: 8rem;
+  }
+  #Conf-passcode{
+      left: 4rem;
+  }
+  .btn{
+    position: relative;
+    top: 4rem;
+  }
+  .btn:hover{
+    background-color: #f58b00;
+    transform: perspective(100px)  translate3D(0);
+    transition: 0.3s;
+  }
+  .Login{
+    position: relative;
+    text-decoration: none;
+    top: 3.6rem;
+    left: 4.5rem;
+  }
+  @media screen and (max-width: 300px){
+    .container-md{
+      width: 50rem;
+      height: 60rem;
+      margin-top: 31rem;
+      margin-left: 7.5rem;
+      box-shadow: 0px 7px 30px black;
+    }
+    h1{
+      position: relative;
+      left: 17.5rem;
+      font-size: 15rem;
+      font-weight: bolder;
+      font-family: 'Baloo Bhai 2', cursive;
+    }
+    #name, #user, #address, #postalCode, #passcode, #Conf-passcode{
+        position: relative;
+        width: 20rem;
+        border: none;
+        border-bottom: 5px gold solid;
+        font-size: 2rem;
+        left: 10rem;
+        top: 5rem;
+    }
+    .btn{
+      font-size: 3rem;
+    }
+  }
+  @media screen and (max-width: 375px){
+    .container-md{
+      width: 50rem;
+      height: 50rem;
+      margin-top: 31rem;
+      margin-left: 7.5rem;
+      box-shadow: 0px 7px 30px black;
+    }
+    h1{
+      position: relative;
+      left: 17.5rem;
+      font-size: 5rem;
+      font-weight: bolder;
+      font-family: 'Baloo Bhai 2', cursive;
+    }
+    #name, #user, #address, #postalCode, #passcode, #Conf-passcode{
+        position: relative;
+        width: 20rem;
+        border: none;
+        border-bottom: 5px gold solid;
+        font-size: 2rem;
+        left: 10rem;
+        top: 5rem;
+    }
+    .btn{
+      font-size: 3rem;
+    }
+  }
+  @media screen and (max-width: 500px){
+    .container-md{
+      width: 50rem;
+      height: 50rem;
+      margin-top: 31rem;
+      margin-left: 10.5rem;
+      box-shadow: 0px 7px 30px black;
+    }
+    h1{
+      position: relative;
+      left: 17.5rem;
+      font-size: 5rem;
+      font-weight: bolder;
+      font-family: 'Baloo Bhai 2', cursive;
+    }
+    .user, .passcode{
+        position: relative;
+        width: 20rem;
+        border: none;
+        border-bottom: 5px gold solid;
+        font-size: 2rem;
+        left: 10rem;
+        top: 5rem;
+    }
+    .btn{
+      font-size: 3rem;
+    }
+  }
+  @media (min-width: 768px){
+  .container, .container-md, .container-sm {
+      max-width: 850px;
+  }
+}
+  @media screen and (max-width: 800px){
+    .container-md{
+      width: 60rem;
+      height: 69rem;
+      margin-top: 17rem;
+      margin-left: 9.5rem;
+      box-shadow: 0px 7px 30px black;
+    }
+    h1{
+      position: relative;
+      left: 17.5rem;
+      font-size: 5rem;
+      font-weight: bolder;
+      font-family: 'Baloo Bhai 2', cursive;
+    }
+    h2{
+      font-size: 1.8rem;
+      font-weight: bolder;
+    }
+    #name, #user, #address, #postalCode, #passcode, #Conf-passcode{
+      position: relative;
+      text-align: center;
+      font-size: 1.8rem;
+      width: 20rem;
+      border: none;
+      border-bottom: 3px gold solid;
+      left: 15rem;
+      top: 0rem;
+      margin-top: 5%;
+    }
+    #user{
+        left: 4rem;
+    }
+    #address{
+      left: 16rem;
+      border-bottom: 4px gold solid;
+    }
+    #postalCode{
+      left: 20rem;
+    }
+    #Conf-passcode{
+        left: 7rem;
+    }
+    .btn{
+      font-size: 3rem;
+    }
+    .Login{
+      position: relative;
+      text-decoration: none;
+      font-size: 2.5rem;
+      top: 3.5rem;
+      left: 3rem;
+    }
+  }
+  @media screen and (max-width: 1024px){
+    .container-md{
+      width: 69rem;
+      height: 80rem;
+      margin-top: 17rem;
+      margin-left: 10.5rem;
+      box-shadow: 0px 7px 30px black;
+    }
+    h1{
+      position: relative;
+      left: 20.5rem;
+      font-size: 5rem;
+      font-weight: bolder;
+      font-family: 'Baloo Bhai 2', cursive;
+    }
+    h2{
+      font-size: 2rem;
+      font-weight: bolder;
+    }
+    #name, #user, #address, #postalCode, #passcode, #Conf-passcode{
+      position: relative;
+      text-align: center;
+      font-size: 2.3rem;
+      width: 20rem;
+      border: none;
+      border-bottom: 3px gold solid;
+      left: 15rem;
+      top: 0rem;
+      margin-top: 5%;
+    }
+    #user{
+        left: 4rem;
+    }
+    #address{
+      left: 16rem;
+      border-bottom: 4px gold solid;
+    }
+    #postalCode{
+      left: 20rem;
+    }
+    #Conf-passcode{
+        left: 7rem;
+    }
+    .btn{
+      font-size: 3rem;
+    }
+    .Login{
+      position: relative;
+      text-decoration: none;
+      font-size: 2.5rem;
+      top: 3.5rem;
+      left: 3rem;
+    }
+  }

@@ -1,0 +1,14 @@
+@media screen and (max-width: 414px){
+    body{
+        background-color: rgb(24, 24, 24);
+    }
+    th{
+        font-size: 0.7rem;
+        color: white;
+    }
+    td{
+        font-weight: 500;
+        font-size: 0.7rem;
+        color: white;
+    }
+}

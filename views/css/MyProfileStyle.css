@@ -1,0 +1,137 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.navbar{
+    z-index: 3;
+}
+.head{
+    text-align: center;
+    font-weight: bolder;
+    font-family: cursive;
+    border-bottom: 2px black solid;
+}
+.img-fluid{
+    position: absolute;
+    background-size: cover;
+}
+.container-lg{
+    position: relative;
+    text-align: center;
+    top: 500%;
+    height: 13rem;
+    width: 13rem;
+    border-width: 2rem;
+    border-radius: 120rem;
+    background-color: white;
+    box-shadow: 0px 7px 30px black;
+}
+.name{
+    position: relative;
+    text-align: center;
+    font-family: cursive;
+    margin-bottom: 6rem;
+}
+.container-xxl{
+    position: relative;
+    border: 3px black solid;
+    border-radius: 15px;
+}
+.container-xxl{
+    color: whitesmoke;
+}
+.detail{
+    display: flex;
+    padding-top: 2rem;
+}
+.h6{
+    padding-left: 0.5rem;
+}
+.CP{
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+    left: 36rem;
+}
+
+
+
+
+
+@media screen and (max-width: 800px){
+    body{
+        background-image: url(../Menu/Portrait\ Login\ Background.jpg);
+        background-size: cover;
+    }
+    .head{
+        text-align: center;
+        background-color: whitesmoke;
+        font-weight: bolder;
+        font-family: cursive;
+        border-bottom: 2px black solid;
+    }
+    .img-fluid{
+        display: none;
+        position: absolute;
+        background-size: cover;
+    }
+    .container-lg{
+        position: relative;
+        text-align: center;
+        top: 500%;
+        height: 9rem;
+        width: 9rem;
+        border-width: 2rem;
+        border-radius: 120rem;
+        background-color: white;
+        box-shadow: 0px 7px 30px black;
+    }
+    .name{
+        position: relative;
+        text-align: center;
+        font-family: cursive;
+        color: whitesmoke;
+    }
+    .container-xxl{
+        position: relative;
+        opacity: -100px;
+        border: 3px rgb(0, 0, 0) solid;
+        box-shadow: 0px 7px 30px black;
+        border-radius: 15px;
+        color: whitesmoke;
+        margin-bottom: 5rem;
+    }
+    .CP{
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-weight: bolder;
+        left: 10rem;
+    }
+    @media screen and (max-width: 768px){
+        .CP{
+            color: rgb(255, 255, 255);
+            left: 20rem;
+        }   
+        @media screen and (max-width: 550px){
+            .CP{
+                color: rgb(255, 255, 255);
+                left: 20rem;
+            }   
+            @media screen and (min-width: 300px){
+                .CP{
+                    color: rgb(255, 255, 255);
+                    left: 8rem;
+                }   
+                @media screen and (min-width: 200px){
+                    .CP{
+                        color: rgb(255, 255, 255);
+                        left: 5rem;
+                    }   
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('./partials/head.ejs'); %>
+    <link rel="stylesheet" href="css/RegistrationStyle.css" />
+    <title>Registration | Pizza Time</title>
+</head>
+<body> 
+  <% if(messages.error) { %>
+    <div class="alert alert-danger" role="warn"><%= messages.error%></div>
+  <% } %>
+  <% if(messages.outstation) { %>
+    <div class="alert alert-danger" role="warn"><%= messages.outstation%></div>
+  <% } %>
+  <% if(messages.success) { %>
+    <div class="alert alert-success" role="alert"><%= messages.success%></div>
+  <% } %>
+    <div class="container-md">
+        <form action="/register" method="POST"> 
+          <h1>Sign up</h1>
+          <h2> First Name* :- <input type="text" id="name" name="name" value="<%= messages.name %>" placeholder="Enter Your Name" required></h2><br>
+          <h2> Phone number* :- <input type="number" id="user" name="number" value="<%= messages.number %>" placeholder="Enter Your Phone Number" required></h2><br>
+          <h2> Address* :- <textarea name="address" value="<%= messages.address%>" id="address" cols="20" rows="2" placeholder="Enter your permanent Address"></textarea></h2><br>
+          <h2> Zip* :- <input type="number" id="postalCode" name="zip" value="<%= messages.zip%>" placeholder="Enter You City Zip code" required></h2><br>
+          <h2> Password* :- <input type="password" id="passcode" name="password" size="16" placeholder="Enter password"title="Password must be contain 8 to 16 character" required></h2><br>
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn Register btn-primary" type="submit">Register Now</button>
+            <a href="/login" class="Login">Already have an Account?</a>
+        </div>
+        </form>
+      </div>
+    
+      <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+
+
+
+
+    <script src="../JS/jquery-3.6.0.min.js"></script>
+    <script src="../JS/app.js "></script>
+    
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+</body>
+</html>
